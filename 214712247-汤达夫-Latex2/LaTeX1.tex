@@ -3,17 +3,50 @@
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
+\begin{algorithm}
+\caption{A}
+\label{alg:A}
+\begin{algorithmic}
+\STATE {set $r(t)=x(t)$} 
+\REPEAT 
+\STATE set $h(t)=r(t)$ 
+\REPEAT
+\STATE set $h(t)=r(t)$ 
+\UNTIL{B} 
+\UNTIL{B}
+\end{algorithmic}
+\end{algorithm}
+
+
+
+
+
+
+
+
+
+
+
+\begin{flushright}
+this is the first use of the table.~\ref{table-sample}\\
+this is the first use of the figure.~\ref{figure-sample}
+\end{flushright}
+
 \begin{table}
 \centering
 \caption{test table}
+\label{table-sample}
 \begin{tabular}{p{15.1em}|r|r|r}
 \hline
 name & class & id \\
@@ -21,7 +54,18 @@ name & class & id \\
 zhangsan & 1 & 0001 \\
 \end{tabular}
 
+
 \end{table}
+
+
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{QQ图片20200902064302.jpg}
+\caption{A simple caption \label{figure-sample}}
+
+\end{figure}
 
 \begin{thebibliography}{00}
 \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
