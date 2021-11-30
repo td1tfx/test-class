@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{graphicx} 
+\usepackage{subfigure}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{setspace}
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}} 
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{document}
+hello world!
+
+\begin{table}
+\centering
+\caption{test table}
+\begin{tabular}{l|l|l|l}
+\hline
+%name &  name & ...
+name & class & id &sd\\
+\hline
+zhangsan & 1 & 0001& test\\\hline
+\end{tabular}
+\end{table}
+
+
+%\begin{figure}
+%\includegraphics[width=\columnwidth]{testfigure.png}
+%\label{testfigure}
+%\caption{test-figure}
+%\end{figure}
+%This is the first time to use figure.~\ref{testfigure}
+\begin{figure}[h]
+\label{testfigure}
+\centering
+\includegraphics[width=5cm,height=4cm]{3}
+\caption{3.png .}
+\end{figure}
+This is the first time to use figure.~\ref{testfigure}
+
+
+%算法
+\begin{algorithm}
+\caption{test-algorith}
+\label{test-algorithm}
+\begin{algorithmic}
+\REQUIRE parameters
+\ENSURE results
+\STATE OP1
+\STATE OP2
+\FOR{condition}
+	\STATE op3
+	\IF{CONDITION}
+		\STATE OP4
+	\ENDIF
+\ENDFOR
+
+
+\end{algorithmic}
+\end{algorithm}
+
+
+
+
+
+
+\end{document}
