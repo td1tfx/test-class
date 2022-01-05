@@ -1,0 +1,40 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{algorithm}
+
+\usepackage{algpseudocode}
+\usepackage{graphics}
+\begin{document}
+\begin{table}
+	\centering
+	\caption{text table}
+	\begin{tabular}{l|l|l}
+	\hline
+	name & class & id\\
+	\hline
+	zhangsan & 1 &0111\\
+	\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{algorithm}
+	\caption{test-algorithm}
+	\begin{algorithmic}
+		\Require a,b.
+		\Ensure b.
+		\State Initiallize parameters
+		\For {every epoch}:
+		\State Do process a.
+		\If{a=3}
+			\State Do copy a to b.
+		\ElsIf{a=5}
+			\State Remove a.
+		\EndIf
+		\EndFor
+		
+	\end{algorithmic}
+	
+\end{algorithm}
+
+\end{document}
